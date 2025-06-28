@@ -11,7 +11,7 @@ body {
 }
 .logo
 {
-    padding-left: 50px;
+    padding-left: 40px;
 }
 .navber-main
 {
@@ -48,7 +48,7 @@ body {
     animation: gifAnimation 0.5s infinite;
     transition: 1s;
     display: inline-block;
-    left: 15px;
+    left: 5px;
 }
 @keyframes gifAnimation{
     from{
