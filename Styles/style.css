@@ -1,0 +1,83 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #333;
+}
+.logo
+{
+    padding-left: 50px;
+}
+.navber-main
+{
+    position: relative;
+    border-radius: 30px;
+}
+.navber-main i{
+    font-size: 33px;
+    font-weight: bold;
+}
+.navber-main .forword-slash
+{
+    font-size: 35px;
+    font-weight: bold;
+}
+.navber-main span
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.idea-blub{
+    position: absolute;
+    width: 70px;
+    height: 90px;
+    background-size: cover;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    animation: gifAnimation 0.5s infinite;
+    transition: 1s;
+    display: inline-block;
+    left: 0px;
+}
+@keyframes gifAnimation{
+    from{
+        background-image: url("../steptodown.com362293-removebg-preview.svg");
+    }
+    to{
+        background-image: url("../steptodown.com362293-removebg-preview\ \(1\).svg");
+    }
+}
+.navbar-links
+{
+    padding-left: 40%;
+}
+.navbar-links ul
+{
+    font-size: 20px;
+}
+.navbar-button
+{
+    margin-right: 20px;
+    border: none;
+    padding: 0%;
+}
+.header-container
+{
+    background-color: aqua;
+    height: 500px;
+}
+.header-container div{
+    background-color: black;
+    padding: 5px 10px;
+    height: 30px;
+    color: aliceblue;
+    display: inline;
+    border-radius: 100px;
+    text-transform: uppercase;
+}
