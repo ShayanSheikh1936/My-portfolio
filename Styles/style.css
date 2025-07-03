@@ -21,7 +21,7 @@ body {
     border-radius: 30px;
     background-color: blueviolet;
     border: 1.9px solid black;
-    top: 5px;
+    top: 10px;
     z-index: 200;
     position: sticky;
     animation: blur ease;
