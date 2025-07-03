@@ -10,6 +10,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="Styles/style.css">
+  <link rel="stylesheet" href="./Responsives/mobile.css">
+  <link rel="stylesheet" href="./Styles/animation.css">
   <title>Document</title>
 </head>
 <body>
@@ -22,7 +24,7 @@
         <span class="navbar-toggler-icon pl-4 button-border"></span>
       </button>
       <div class="collapse navbar-collapse navbar-links" id="collapsibleNavbar">
-        <ul class="navbar-nav nav-links" >
+        <ul class="navbar-nav nav-links pr-4" >
           <li class="nav-item">
             <a class="nav-link active" href="#home">Home</a>
           </li>
@@ -35,15 +37,81 @@
         </ul>
     </div>
 </nav>
+<!-- header rounded skill  -->
 <header class="container-fluid header-container d-flex justify-content-top align-items-center flex-column">
-  <div class="mt-2 bg-dark sticker align-self-star mb-5"><p class="pt-0">Web developer | Web-designer</p></div>
+  <div class="bg-dark sticker mb-4 mt-3 "><p class="pt-0">Web developer | Web-designer</p></div>
 
-  <div class="container-fluid  main-header d-flex flex-row ">
-    <div class="my-picture align-items-center mt-5"></div>
-  <div class="straight-line"></div>
-  </div>
+  <!-- header picture and straight line -->
+  <div class="container-fluid main-header d-flex flex-row pt-1">
+    <div class="my-picture align-items-center mt-4 col-md-2"></div>
+  <div class="straight-line col-md-2"></div>
+
+  <!-- header about heading and paragraph -->
+  <span class=" header-text pt-0 mt-0 col-md-8">
+    <h1 class="pt-4">Turning Ideas into <span class="bold-text">Stunning Pixel-Perfect Websites</span></h1>
+  <p style="font-size: medium; font-weight: 500;" class="">I'm Shayan Sheikh, a frontend web developer creating stunning, responsive, and high-quality websites that deliver great user experiences and help brands stand out online.</p>
+  </span>
+
+
+ </div>
   
 </header>
+<!-- about section -->
+<section class="mt-4">
+    <div class="section-heading d-flex justify-content-center flex-column align-items-center mb-4">
+      <h1 class="section2">About <span class="bold-text">Me</span></h1>
+      <div class="paragraph-width d-flex justify-content-center align-items-center container-sm">
+        <p class="paragraph-style">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laudantium iste eligendi nihil ipsum dignissimos est impedit explicabo ipsam at ad, dicta quisquam natus cumque. Nihil quas, maiores sapiente et reprehenderit reiciendis laboriosam labore ipsum?</p>
+      </div>
+    <div class="d-flex text-bottom-line"></div>
+    </div>
+</section>
+<!-- my work section  -->
+ <section>
+  <div class="section-heading d-flex justify-content-center flex-column align-items-center mb-4">
+    <h1 class="section2">Why Do People choose me to <span class="bold-text">Build Website</span></h1>
+  <div class="d-flex text-bottom-line"></div>
+  </div>
+  <div class="row justify-content-center d-flex">
+    <div class="col-md-3 work-cards mt-2 mb-2 ml-0 m-2">
+      <div class="icon-wrapper mb-2">
+        <i class="fas fa-desktop"></i>
+        <i class="fas fa-laptop"></i>
+        <i class="fas fa-mobile-alt"></i>
+      </div>      
+      <div>
+        <h1 class="bold-text card-headings fade-up">Responsive Design</h1>
+        <p style="text-align: center;" class="fade-up">I design fully responsive websites that look perfect on all devices. Expert in mobile-first layouts, flexible grids, media queries, boot straps, and modern responsive web techniques.</p>
+      </div>
+    </div>
+    <div class="col-md-3 work-cards-2 m-2">
+      <i class="fas fa-code icon-wrapper mb-2"></i>
+      <h1 class="bold-text card-headings fade-up">Clean Coding</h1>
+      <p style="text-align: center;" class="fade-up">I write clean, well-structured, and maintainable code using HTML, CSS, Bootstrap, JavaScript, and ReactJs to build fast, responsive, and user-friendly websites with professional standards.</p>
+    </div>
+    <div class="col-md-3 work-cards m-2">
+      <div class="icon-wrapper mb-2">
+        <i class="fas fa-pencil-ruler "></i> 
+        <i class="fa-solid fa-file-code"></i>
+        <i class="fa-solid fa-laptop-code"></i>
+      </div>
+       <h1 class="bold-text card-headings fade-up">UI/UX Design</h1>
+      <p style="text-align: center;" class="fade-up">I create modern, responsive UI/UX designs that enhance user experience. Skilled in wireframes, prototyping, user flow, and clean design interfaces for websites and mobile apps.</p>
+    </div>
+    <div class="col-md-3 work-cards-2 m-2 delay-1 animate">
+      <i class="fas fa-diagram-project icon-wrapper mb-2 "></i>
+      <h1 class="bold-text card-headings fade-up">Client-Ready Presentation</h1>
+      <p style="text-align: center;" class="fade-up">I create client-ready, responsive websites with clean design, optimized code, and smooth functionality—perfect for real-world launch and presentation.
+      </p>
+    </div>
+  </div>
+ </section>
+ <section>
+       <!-- our project section -->
+        <div class=" mt-5 section-heading d-flex justify-content-center flex-column align-items-center mb-3 delay-1">
+          <h1 class="section2">Our <span class="bold-text">Projects</span></h1>
+        </div>
+ </section>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>

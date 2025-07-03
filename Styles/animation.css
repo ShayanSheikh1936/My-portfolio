@@ -1,0 +1,21 @@
+@keyframes iconChange {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    30%  { opacity: 1; }
+    40%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  @keyframes gifAnimation{
+    from{
+        background-image: url("../Svg/steptodown.com362293-removebg-preview.svg");
+    }
+    to{
+        background-image: url("../Svg/steptodown.com362293-removebg-preview\ \(1\).svg");
+    }
+}
+@keyframes moveUp {
+    to {
+      opacity: 1;
+      transform: translateY(-10px);
+    }
+  }
