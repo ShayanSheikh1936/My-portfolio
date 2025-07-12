@@ -1,123 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=7">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="Styles/style.css">
   <link rel="stylesheet" href="./Responsives/mobile.css">
   <link rel="stylesheet" href="./Styles/animation.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <title>Document</title>
 </head>
+
 <body>
   <nav class="container-fluid navbar navbar-expand-md navbar-dark pt-2 pb-2 mt-3 navber-main">
     <div class="navbar-brand logo d-flex align-items-center">
-        <span class="idea-blub"></span>
-       <i class="fa-solid fa-less-than"></i>&nbsp;<span class="forword-slash">/</span><span> Shayan Sheikh</span>&nbsp;<i class="fa-solid fa-greater-than"></i>
-      </div>
-      <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-        <span class="navbar-toggler-icon pl-4 button-border"></span>
-      </button>
-      <div class="collapse navbar-collapse navbar-links" id="collapsibleNavbar">
-        <ul class="navbar-nav nav-links pr-4" >
-          <li class="nav-item">
-            <a class="nav-link active" href="#home">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#Projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" href="#contact">Contact</a>
-          </li>
-        </ul>
+      <span class="idea-blub"></span>
+      <i class="fa-solid fa-less-than"></i>&nbsp;<span class="forword-slash">/</span><span> Shayan Sheikh</span>&nbsp;<i
+        class="fa-solid fa-greater-than"></i>
     </div>
-</nav>
-<!-- header rounded skill  -->
-<header class="container-fluid header-container d-flex justify-content-top align-items-center flex-column">
-  <div class="bg-dark sticker mb-4 mt-3 "><p class="pt-0">Web developer | Web-designer</p></div>
+    <button class="navbar-toggler navbar-button" type="button" data-bs-toggle="collapse"
+      data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon pl-4 button-border"></span>
+    </button>
+    <div class="collapse navbar-collapse navbar-links" id="collapsibleNavbar">
+      <ul class="navbar-nav nav-links pr-4">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#Projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- header rounded skill  -->
+  <header class="container-fluid header-container d-flex justify-content-top align-items-center flex-column">
+    <div class="bg-dark sticker mb-3 mt-3">
+      <p class="pt-0" >Web developer | Web-designer</p>
+    </div>
 
-  <!-- header picture and straight line -->
-  <div class="container-sm main-header d-flex flex-row pt-1">
-    <div class="my-picture align-items-center mt-4 col-md-2"></div>
-  <div class="straight-line col-md-2"></div>
+    <!-- header picture and straight line -->
+    <div class="container-fluid  main-header d-flex flex-row pt-1 flex-w">
+      <div class="my-picture align-items-center mt-4 col-md-2 animate__animated animate__pulse animation animate__infinite	infinite"></div>
+      <div class="straight-line col-md-2"></div>
 
-  <!-- header about heading and paragraph -->
-  <span class=" header-text pt-0 mt-5 col-md-8 container-sm">
-    <h1 class="pt-4 typing-effect bg-dark">Turning Ideas into <span class="bold-text">Stunning Pixel-Perfect Websites</span></h1>
-  </span>
+      <!-- header about heading and paragraph -->
+      <span class=" header-text pt-0 mt-0 flex-column ">
+        <div>
+          <h2 class="pt-4 mt-3 typing-effect" >Hi, There </h2>
+        </div>
+        <div>
+          <h1 class="">Turning Ideas into <span class="bold-text">Stunning Pixel-Perfect Websites</span></h1>
+        </div>
+        <div class="pt-0">
+          <span class="fonts-icons d-flex">
+            <a href="" target="_blank"><i class="fa-brands fa-instagram" style="color: #E1306C;"></i></a> <!-- Pink for Instagram -->
+            &nbsp;
+            <a href="" target="_blank"><i class="fa-brands fa-facebook" style="color: #1877F2;"></i></a> <!-- Blue for Facebook -->
+            &nbsp;
+            <a href="" target="_blank"><i class="fa-brands fa-github" style="color: #333333;"></i></a> <!-- Dark for GitHub -->
+            &nbsp;
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin-in" style="color: #0A66C2;"></i></a> <!-- Blue for LinkedIn -->
+            &nbsp;
+            <a href="" target="_blank"><i class="fa-brands fa-whatsapp" style="color: #25D366;"></i></a> <!-- Green for WhatsApp -->
+          </span>
+        </div>
+        <div class="mt-3 ">
+          <button class=" header-button ">Download CV</button>&nbsp;
+          <button class=" header-button">Contact US</button>
+        </div>
+      </span>
 
 
- </div>
-  
-</header>
-<!-- about section -->
-<section class="mt-4">
+    </div>
+
+  </header>
+  <!-- about section -->
+  <section class="mt-0">
     <div class="section-heading d-flex justify-content-center flex-column align-items-center mb-4">
       <h1 class="section2">About <span class="bold-text">Me</span></h1>
-      <div class="paragraph-width d-flex justify-content-center align-items-center container-sm">
-        <p class="paragraph-style">Hi there! I’m a passionate **Web Developer** specializing in **HTML, CSS, JavaScript, Bootstrap and wordpress**. Whether you need a sleek **Business Website**, a high-converting **Sales Page**, a user-friendly **Contact Portal**, a polished **Static Site**, or a dynamic **Portfolio**, I’ve got you covered!</p>
+      <div class="paragraph-width align-items-center container-sm mt-3">
+        <p class="paragraph-style container-sm">Hi, I'm Shayan Sheikh, a passionate and professional Web Developer and Front-End Specialist. I craft stunning, responsive, and user-friendly websites that deliver seamless digital experiences. With a sharp eye for design and a love for clean, efficient code, I transform creative ideas into fully functional, modern websites that captivate users and drive results. My portfolio reflects my commitment to excellence, where every pixel and every line of code is built with purpose.</p>
+        <p class="paragraph-style container-sm">As a self-driven developer, I have built my own portfolio from the ground up to showcase my skills and creativity. Whether it's designing sleek user interfaces, optimizing website performance, or building dynamic web experiences, I am dedicated to creating solutions that leave a lasting impact. Explore my work and discover how I turn vision into reality with precision and style.</p>
       </div>
-    <div class="d-flex text-bottom-line"></div>
+      <div class="d-flex text-bottom-line"></div>
     </div>
-</section>
-<!-- my work section  -->
- <section>
-  <div class="section-heading d-flex justify-content-center flex-column align-items-center mb-4">
-    <h1 class="section2">Why Do People choose me to <span class="bold-text">Build Website</span></h1>
-  <div class="d-flex text-bottom-line"></div>
-  </div>
-  <div class="row justify-content-center d-flex">
-    <div class="col-md-3 work-cards mt-2 mb-2 ml-0 m-2">
-      <div class="icon-wrapper mb-2">
-        <i class="fas fa-desktop"></i>
-        <i class="fas fa-laptop"></i>
-        <i class="fas fa-mobile-alt"></i>
-      </div>      
-      <div>
-        <h1 class="bold-text card-headings fade-up">Responsive Design</h1>
-        <p style="text-align: center;" class="fade-up">I design fully responsive websites that look perfect on all devices. Expert in mobile-first layouts, flexible grids, media queries, boot straps, and modern responsive web techniques.</p>
-      </div>
+  </section>
+  <!-- my work section  -->
+  <section class="container-fluid finisher-header">
+    <div class="section-heading d-flex justify-content-center flex-column align-items-center mb-4">
+      <h1 class="section2">Why Do People choose me to <span class="bold-text">Build Website</span></h1>
+      <div class="d-flex text-bottom-line"></div>
     </div>
-    <div class="col-md-3 work-cards-2 m-2">
-      <i class="fas fa-code icon-wrapper mb-2"></i>
-      <h1 class="bold-text card-headings fade-up">Clean Coding</h1>
-      <p style="text-align: center;" class="fade-up">I write clean, well-structured, and maintainable code using HTML, CSS, Bootstrap, JavaScript, and ReactJs to build fast, responsive, and user-friendly websites with professional standards.</p>
-    </div>
-    <div class="col-md-3 work-cards m-2">
-      <div class="icon-wrapper mb-2">
-        <i class="fas fa-pencil-ruler "></i> 
-        <i class="fa-solid fa-file-code"></i>
-        <i class="fa-solid fa-laptop-code"></i>
-      </div>
-       <h1 class="bold-text card-headings fade-up">UI/UX Design</h1>
-      <p style="text-align: center;" class="fade-up">I create modern, responsive UI/UX designs that enhance user experience. Skilled in wireframes, prototyping, user flow, and clean design interfaces for websites and mobile apps.</p>
-    </div>
-    <div class="col-md-3 work-cards-2 m-2 delay-1 animate">
-      <i class="fas fa-diagram-project icon-wrapper mb-2 "></i>
-      <h1 class="bold-text card-headings fade-up">Client-Ready Presentation</h1>
-      <p style="text-align: center;" class="fade-up">I create client-ready, responsive websites with clean design, optimized code, and smooth functionality—perfect for real-world launch and presentation.
-      </p>
-    </div>
-  </div>
- </section>
- <section>
-  <!-- project section p span seemore  -->
-  <!-- <span id="shayan1" class="sheikh1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet inventore, totam reprehenderit nesciunt expedita architecto nihil necessitatibus minus distinctio quos fugiat. Dolor expedita dolore eum!</span>
-            <button class="btn1 seeMore1">See more ▼</button>
-            <button class="btn1 hideLess1">hide Less ▲</button> -->
-       <!-- our project section -->
-        <div class=" mt-5 section-heading d-flex justify-content-center flex-column align-items-center mb-3 delay-1">
-          <h1 class="section2">Our <span class="bold-text">Projects</span></h1>
+    <div class="row justify-content-center d-flex">
+      <div class="col-md-3 work-cards mt-2 mb-2 ml-0 m-2">
+        <div class="icon-wrapper mb-2">
+          <i class="fas fa-desktop"></i>
+          <i class="fas fa-laptop"></i>
+          <i class="fas fa-mobile-alt"></i>
         </div>
- </section>
+        <div>
+          <h1 class="bold-text card-headings fade-up">Responsive Design</h1>
+          <p style="text-align: center;" class="fade-up">I design fully responsive websites that look perfect on all
+            devices. Expert in mobile-first layouts, flexible grids, media queries, boot straps, and modern responsive
+            web techniques.</p>
+        </div>
+      </div>
+      <div class="col-md-3 work-cards-2 m-2">
+        <i class="fas fa-code icon-wrapper mb-2"></i>
+        <h1 class="bold-text card-headings fade-up">Clean Coding</h1>
+        <p style="text-align: center;" class="fade-up">I write clean, well-structured, and maintainable code using HTML,
+          CSS, Bootstrap, JavaScript, and ReactJs to build fast, responsive, and user-friendly websites with
+          professional standards.</p>
+      </div>
+      <div class="col-md-3 work-cards m-2">
+        <div class="icon-wrapper mb-2">
+          <i class="fas fa-pencil-ruler "></i>
+          <i class="fa-solid fa-file-code"></i>
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+        <h1 class="bold-text card-headings fade-up">UI/UX Design</h1>
+        <p style="text-align: center;" class="fade-up">I create modern, responsive UI/UX designs that enhance user
+          experience. Skilled in wireframes, prototyping, user flow, and clean design interfaces for websites and mobile
+          apps.</p>
+      </div>
+      <div class="col-md-3 work-cards-2 m-2 ">
+        <i class="fas fa-diagram-project icon-wrapper mb-2 "></i>
+        <h1 class="bold-text card-headings fade-up">Client-Ready Presentation</h1>
+        <p style="text-align: center;" class="fade-up">I create client-ready, responsive websites with clean design,
+          optimized code, and smooth functionality—perfect for real-world launch and presentation.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section>
+    <!-- our project section -->
+    <div class=" mt-5 section-heading d-flex justify-content-center flex-column align-items-center mb-3 delay-1">
+      <h1 class="section2">My <span class="bold-text">Projects</span></h1>
+    </div>
+    <div class="row d-flex justify-content-center overall-projects">
+      <div class="card col-md-4 m-2 pt-2 mobile-width single-project1" >
+        <img class="project-picture" src="screencapture-grillchemmy-netlify-app-food-menu-2025-06-23-21_04_43.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex align-items-center flex-column card- card-design">
+            <div class="live"></div><div class="live-bigdot m-1"></div><a href=""><div class="project-heading mt-2 ">Grill Chemmy</div></a> <div class="bold-text" style="font-size:25px; transform: translateY(-15px);">-</div><div style="transform: translateY(-20px);">Resturant Website</div>
+          </h5>
+          <p class="card-text project-text ">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="d-flex flex-wrap tag-container">
+            <p class="tag">Html 5</p><p class="tag">Css 3</p><p class="tag">JavaScript</p><p class="tag">Bootstrap 5</p><p class="tag">fireBase-Auth</p><p class="tag">J-query</p>  
+      </div>
+      <div class="card-section-button mt-1">
+        <button class=" header-button-card ">GitHub</button>&nbsp;
+        <button class=" header-button-card">demo <i class="fa-solid fa-share-from-square"></i></button>
+      </div>
+        </div>
+  </div>
+      <div class="card col-md-4 m-2 pt-2 mobile-width single-project2" >
+        <img class="project-picture" src="screencapture-grillchemmy-netlify-app-food-menu-2025-06-23-21_04_43.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title d-flex align-items-center flex-column card- card-design">
+            <div class="live"></div><div class="live-bigdot m-1"></div><a href=""><div class="project-heading mt-2 ">Grill Chemmy</div></a> <div class="bold-text" style="font-size:25px; transform: translateY(-15px);">-</div><div style="transform: translateY(-20px);">Resturant Website</div>
+          </h5>
+          <p class="card-text project-text ">Some quick example text to build on the card title and make up the bulk of the card's content.<a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">See More</a></p><p class="collapse multi-collapse seeMore-text pb-0 pt-0 project-text" id="multiCollapseExample1">Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+          <div class="d-flex flex-wrap tag-container">
+            <p class="tag">Html 5</p><p class="tag">Css 3</p><p class="tag">JavaScript</p><p class="tag">Bootstrap 5</p><p class="tag">fireBase-Auth</p><p class="tag">J-query</p>  
+      </div>
+      <div class="card-section-button mt-1">
+        <button class=" header-button-card ">GitHub</button>&nbsp;
+        <button class=" header-button-card">demo <i class="fa-solid fa-share-from-square"></i></button>
+      </div>
+        </div>
+  </div>
+      
+  <div class="card col-md-4 m-2 pt-2 mobile-width single-project3">
+    <img class="project-picture" src="screencapture-grillchemmy-netlify-app-food-menu-2025-06-23-21_04_43.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title d-flex align-items-center flex-column card- card-design">
+        <div class="live"></div><div class="live-bigdot m-1"></div><a href=""><div class="project-heading mt-2 ">Grill Chemmy</div></a> <div class="bold-text" style="font-size:25px; transform: translateY(-15px);">-</div><div style="transform: translateY(-20px);">Resturant Website</div>
+      </h5>
+      <div>
+        <p class="card-text project-text ">Some quick example text to build on the card title and make up the bulk of the card's content.<a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">See More</a></p>
+        <div class=" collapse multi-collapse seeMore-text pb-0 pt-0 project-text  " id="multiCollapseExample1">
+          <div class="d-flex flex-column ">
+            <h4 class="pb-1">Key Responsibilities</h4>
+            <p>Fully customized design</p>
+         <p>Clean UI/UX design</p>
+          </div>
+        </div>
+        </div>
+      <div class="d-flex flex-wrap tag-container">
+        <p class="tag">Html 5</p><p class="tag">Css 3</p><p class="tag">JavaScript</p><p class="tag">Bootstrap 5</p><p class="tag">fireBase-Auth</p><p class="tag">J-query</p>  
+  </div>
+  <div class="card-section-button mt-1">
+    <button class=" header-button-card ">GitHub</button>&nbsp;
+    <button class=" header-button-card">demo <i class="fa-solid fa-share-from-square"></i></button>
+  </div>
+    </div>
+</div>
+    </div>
+  </section>
+  <!-- my education section -->
+  <div class=" mt-5 section-heading d-flex justify-content-center flex-column align-items-center mb-3 delay-1">
+    <h1 class="section2">My <span class="bold-text">education</span></h1>
+  </div>
+  <div class="d-flex">
+    <span class="education-bar container-sm bg-dark">
+    </span>
+    <span class="education-set container-md bg-light">
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </span>
+  </div>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+ <script src="Dynamics/script.js"></script>
 
 </body>
+
 </html>
