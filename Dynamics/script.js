@@ -93,3 +93,26 @@ window.addEventListener('load', showOnScroll);
 //     }
 //   })
 // })
+const button = document.querySelectorAll(".btn")
+const hideBtn = document.querySelector(".btn1")
+
+button.forEach(function(buttons)
+{
+  buttons.addEventListener("click", ()=>
+    {
+      buttons.style.display ="none";
+      console.log(button);
+    })
+    hideBtn.addEventListener("click", (buttons)=>
+      {
+        buttons.style.display = "inline";
+      })
+})
+
+
+  hideBtn.addEventListener("click", (buttons)=>
+  {
+    buttons.style.display = "inline";
+    
+  })
+

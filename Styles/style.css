@@ -24,8 +24,10 @@ a {
 .navber-main {
     position: relative;
     border-radius: 30px;
-    background-color: blueviolet;
+    background-color: rgb(138, 43, 226, 0.7);
     border: 1.9px solid black;
+    backdrop-filter: blur(30px);
+    /* -webkit-backdrop-filter: blur(3px); */
     top: 10px;
     z-index: 7000;
     position: sticky;
@@ -79,10 +81,14 @@ a {
 
 .header-container {
     background-color: aqua;
-    height: 400px;
 }
-
+.header-container .inner-header
+{
+    flex-direction: column;
+}
+ 
 .header-container .sticker {
+    
     background-color: black;
     padding: 5px 10px;
     height: 30px;
@@ -119,14 +125,6 @@ a {
     background-color: yellowgreen;
     margin: 30px 20px;
     z-index: 20;
-}
-
-.main-header {
-    height: 400px;
-}
-
-.header-container h1 {
-    text-align: cente;
 }
 
 .header-container p {
@@ -593,22 +591,24 @@ a {
    .mobile-width
    {
     width: 25rem;
-    transition: transform 0.5s ease;
    }
    .single-project1
    {
     box-shadow: -25px 15px 100px purple;
     border: 2px solid purple;
+    transition: transform 0.5s ease;
    }
    .single-project3
    {
     box-shadow: 25px 15px 100px purple;
     border: 2px solid purple;
+    transition: transform 0.5s ease;
    }
    .single-project2
    {
     box-shadow: 0px 15px 100px purple;
     border: 2px solid purple;
+    transition: transform 0.5s ease;
    }
    .single-project1.visible,
    .single-project2.visible,
@@ -621,4 +621,10 @@ a {
     background-color: red;
     width: 3px;
     height: 300px;
+   }
+   .single-project1:hover,
+   .single-project2:hover,
+   .single-project3:hover
+   {
+    transform: translateY(-15px);
    }
