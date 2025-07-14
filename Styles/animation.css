@@ -19,15 +19,27 @@
       transform: translateY(-10px);
     }
   }
-
-  /* typing effect */
+@keyframes liveDot {
+  0% {}
+  20%{background-color: rgb(128, 0, 128, 0.3);}
+  40%{background-color: rgb(128, 0, 128, 0.5);}
+  60%{background-color: rgb(128, 0, 128, 0.7);}
+  100%{ background-color: rgb(128, 0, 128, 0.9);}
   
-  @keyframes typing {
-    from { width: 0; }
-    to { width: 10ch; } /* Adjust this to match your text length */
-   }
+}
+@keyframes liveDotBig {
+  0% {opacity: 1px;background-color: rgb(128, 0, 128, 0.9);}
+  30%{opacity: 1px;background-color: rgb(128, 0, 128, 0.7);}
+  60%{opacity: 1px;background-color: rgb(128, 0, 128, 0.5);}
+  90%{ opacity: 1px;background-color: rgb(128, 0, 128, 0.3);}
+  100%{background-color: #ad3ffb;}
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 9ch; } /* Adjust this to match your text length */
+ }
 
-   @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: #333; }
-  } 
+ @keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #333; }
+} 
