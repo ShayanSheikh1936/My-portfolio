@@ -7,6 +7,10 @@
 
 @media screen and (max-width: 768px)
 {
+    .header-heading
+{
+    width: auto;
+}
     .section2{
         padding: 0px 10px;
     }

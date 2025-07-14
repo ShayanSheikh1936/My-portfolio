@@ -110,9 +110,11 @@ button.forEach(function(buttons)
 })
 
 
-  hideBtn.addEventListener("click", (buttons)=>
+  hideBtn.addEventListener("click", (button)=>
   {
-    buttons.style.display = "inline";
+    button.preventDefault();
+    
+    button.style.display = "inline";
     
   })
 

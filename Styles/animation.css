@@ -36,10 +36,11 @@
 }
 @keyframes typing {
   from { width: 0; }
-  to { width: 9ch; } /* Adjust this to match your text length */
- }
+  to { width: 11ch; } /* Adjust ch units based on your text length */
+}
 
- @keyframes blink-caret {
-  from, to { border-color: transparent; }
-  50% { border-color: #333; }
-} 
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}

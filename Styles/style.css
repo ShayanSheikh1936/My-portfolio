@@ -104,6 +104,8 @@ a {
     font-size: 17px;
     font-weight: 500;
     color: #000;
+    width: auto;
+    height: auto;
 }
 
 .my-picture {
@@ -133,6 +135,10 @@ a {
 
 .para-container {
     width: 800px;
+}
+.header-heading
+{
+    width: 900px;
 }
 
 .header-text {
@@ -173,6 +179,7 @@ a {
     border-radius: 20px 90px;
     border: 2px solid black;
     position: relative;
+    box-shadow: 0px 10px 10px black;
 }
 
 .work-cards-2 {
@@ -182,6 +189,7 @@ a {
     border-radius: 90px 20px;
     border: 2px solid black;
     position: relative;
+    box-shadow: 0px 10px 10px black;
 }
 
 .icon-wrapper {
@@ -568,17 +576,17 @@ a {
   font-weight: bold;
   box-shadow: 0 0px 8px purple;
   transition: all 0.3s ease-in;
-}
-.typing-effect {
-    overflow: hidden;
-    /* white-space: nowrap; */
+} 
+   
+.typing-container {
+    border-right: 2px solid black;
+    white-space: nowrap;
     font-size: 30px;
-    text-wrap: nowrap;
+    overflow: hidden;
     font-weight: bold;
-    width: 0; /* Start with 0 width */
-     border-right: 2px solid #333;
-    animation: typing 4s steps(15, end) forwards, blink-caret 0.7s step-end infinite;
-   } 
+    width: 0;
+    animation: typing 4s steps(30) forwards, blink 0.6s step-end infinite;
+  }
    .hiddinText
    {
     z-index: 1000;
@@ -627,4 +635,92 @@ a {
    .single-project3:hover
    {
     transform: translateY(-15px);
+   }
+   /* button styliny */
+   button {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+   }
+   
+   button.learn-more {
+    width: 12rem;
+    height: auto;
+   }
+   
+   button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: radial-gradient(circle, rgba(173, 63, 251, 1) 0%, rgba(46, 39, 42, 1) 100%);
+    border-radius: 1.625rem;
+   }
+   
+   button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+   }
+   
+   button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+   }
+   
+   button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid black;
+    border-right: 0.125rem solid black;
+    transform: rotate(45deg);
+   }
+   
+   button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0px;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #282936;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+   }
+   
+   button:hover .circle {
+    width: 100%;
+   }
+   
+   button:hover .circle .icon.arrow {
+    background: black;
+    transform: translate(1rem, 0);
+   }
+   
+   button:hover .button-text {
+    color: #fff;
    }
