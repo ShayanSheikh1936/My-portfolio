@@ -11,6 +11,10 @@
 {
     width: auto;
 }
+    .about-container
+    {
+        flex-wrap: wrap;
+    }
     .section2{
         padding: 0px 10px;
     }
