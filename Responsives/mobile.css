@@ -11,6 +11,10 @@
 {
     width: auto;
 }
+.author-image
+{
+    display: none;
+}
     .about-container
     {
         flex-wrap: wrap;

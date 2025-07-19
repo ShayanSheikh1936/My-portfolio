@@ -729,3 +729,46 @@ a {
     backdrop-filter: blur(20px);
     border-left: 6px solid purple; 
 }
+.education-card
+{
+    height: 200px;
+    position: relative;
+}
+.education-card img{
+    width: 32rem;
+    position: absolute;
+}
+.education-picture
+{
+    height: 100px;
+    z-index: 200px;
+    border-radius: 27px 27px 0 0;
+}
+.insitute-image 
+{
+    border-radius: 50px;
+    transform: translate(10px, -45px);
+    border: 2px solid black;
+}
+.education-heading
+{
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+} 
+.education-body
+{
+    transform: translateY(-50px);
+    padding-top: 10px;
+    padding-inline: 10px;
+    line-height: 15px;
+}
+.date
+{
+    justify-content: space-between;
+}
+.detail-heading
+{
+    font-size: 17px;
+    color: black;
+}
