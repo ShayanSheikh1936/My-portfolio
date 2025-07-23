@@ -19,9 +19,6 @@
     {
         flex-wrap: wrap;
     }
-    .section2{
-        padding: 0px 10px;
-    }
     .navber-main
     {
         top: 25px;
@@ -30,6 +27,23 @@
     {
         width: 20rem;
     }
+    .education-mobile-width
+   {
+    width: 24rem;
+   }
+   .education-heading
+{
+    color: purple;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 20px;
+}
+
+.detail-heading
+{
+    font-size: 17px;
+    color: black;
+}
     .single-project1
    {
     box-shadow: 0px 0px 15px purple;

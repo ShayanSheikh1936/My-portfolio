@@ -8,7 +8,7 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: #333;
-    height: 4000px;
+    height: 4500px;
     scroll-behavior: smooth;
     background-color:yellowgreen;
 }
@@ -168,7 +168,11 @@ a {
     color: purple;
     text-transform: uppercase;
     text-decoration-color: aqua;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 0.7px black;
+}
+.main-heading
+{
+    font-size: 37px;
 }
 
 .work-cards {
@@ -599,6 +603,10 @@ a {
    {
     width: 25rem;
    }
+   .education-mobile-width
+   {
+    width: 29rem;
+   }
    .single-project1
    {
     box-shadow: -25px 15px 100px purple;
@@ -729,46 +737,77 @@ a {
     backdrop-filter: blur(20px);
     border-left: 6px solid purple; 
 }
-.education-card
-{
-    height: 200px;
-    position: relative;
-}
-.education-card img{
-    width: 32rem;
-    position: absolute;
-}
 .education-picture
 {
     height: 100px;
     z-index: 200px;
-    border-radius: 27px 27px 0 0;
+    border-radius: 29px 29px 0 0;
+}
+.fix-image
+{
+    position: relative;
 }
 .insitute-image 
 {
+    position: absolute;
     border-radius: 50px;
-    transform: translate(10px, -45px);
+    transform: translate(10px, 55px);
     border: 2px solid black;
 }
 .education-heading
 {
     color: purple;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
+    letter-spacing: 0px;
+    /* line-height: 10px; */
 } 
+
 .education-body
 {
-    transform: translateY(-50px);
+    /* transform: translateY(-50px); */
     padding-top: 10px;
     padding-inline: 10px;
     line-height: 15px;
 }
 .date
 {
+    display: flex;
     justify-content: space-between;
 }
 .detail-heading
 {
-    font-size: 17px;
+    font-size: 20px;
     color: black;
 }
+.insitute-social-link
+{
+    font-size:25px;
+    padding-bottom: 20px;
+}
+/* Skill section logo slider infinite linear animation */
+.logo-slider {
+  margin: auto ;
+  border-radius: 40px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.logo-track {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  animation: logoScroll 4s linear infinite;
+}
+
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+  

@@ -1,0 +1,263 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button .bloom-container {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  background: none;
+}
+
+.button .bloom-container .button-container-main {
+  width: 125px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-content: center;
+  border-right: 5px solid gey;
+  border-left: 5px solid rgba(128, 128, 128, 0.147);
+  transform: rotate(-45deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.button .bloom-container .button-container-main .button-inner {
+  height: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.button .bloom-container .button-container-main .button-inner .back {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(
+    60deg,
+    rgb(247, 134, 6, 0.3) 100%,
+    rgb(245, 112, 72, 0.3) 100%
+  );
+}
+
+.button .bloom-container .button-container-main .button-inner .front {
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  background: linear-gradient(
+    60deg,
+    rgb(247, 134, 6, 0.1) 100%,
+    rgb(245, 112, 72, 0.1) 100%
+  );
+  display: grid;
+  place-content: center;
+}
+
+.button .bloom-container .button-container-main .button-inner .front .svg {
+  fill: rgb(247, 135, 0);
+  opacity: 1;
+  width: 50px;
+  aspect-ratio: 1;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in;
+}
+
+.button .bloom-container .button-container-main .button-glass {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  transform: translate(0%, -50%) rotate(0deg);
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in-out;
+}
+
+.button .bloom-container .bloom {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  background: white;
+}
+
+.button .bloom-container .bloom1 {
+  top: 10px;
+  right: 20px;
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 10px 10px,
+    rgb(255, 255, 255) 0px 0px 20px 20px;
+}
+
+.button .bloom-container .bloom2 {
+  bottom: 10px;
+  left: 20px;
+  box-shadow:
+    rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+    rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+}
+
+.button .bloom-container:hover {
+  transform: scale(1.1);
+}
+
+.button .bloom-container:hover .button-container-main .button-glass {
+  transform: translate(0%, -40%);
+}
+
+.button
+  .bloom-container:hover
+  .button-container-main
+  .button-inner
+  .front
+  .svg {
+  opacity: 1;
+  filter: drop-shadow(0 0 9px orange);
+}
+
+.button .bloom-container:active {
+  transform: scale(0.7);
+}
+
+.button .bloom-container:active .button-container-main .button-inner {
+  transform: scale(1.2);
+}
+
+  /* ------------------------------------------------------------------- */
+
+  .button1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button1 .bloom-container1 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 {
+    width: 125px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid gey;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:  rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 .back1 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(7, 99, 238, 0.3) 100%,
+      rgba(0, 51, 128, 0.3) 100%
+    );
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 .front1 {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(7, 99, 238, 0.3) 100%,
+      rgba(0, 51, 128, 0.3) 100%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 .front1 .svg1 {
+    fill: blue;
+    opacity: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-glass1 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button1 .bloom-container1 .bloom1 {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button1 .bloom-container1 .bloom11 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 10px 10px,
+      rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button1 .bloom-container1 .bloom21 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button1 .bloom-container1:hover {
+    transform: scale(1.1);
+  }
+  
+  .button1 .bloom-container1:hover .button-container-main1 .button-glass1 {
+    transform: translate(0%, -40%);
+  }
+  
+  .button1
+    .bloom-container1:hover
+    .button-container-main1
+    .button-inner1
+    .front1
+    .svg1 {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px blue);
+  }
+  
+  .button1 .bloom-container1:active {
+    transform: scale(0.7);
+  }
+  
+  .button1 .bloom-container1:active .button-container-main1 .button-inner1 {
+    transform: scale(1.2);
+  }
