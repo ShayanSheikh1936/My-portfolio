@@ -815,4 +815,25 @@ a {
   animation: logoScroll 5s linear infinite;
 }
 
+.mobile-width {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s ease, transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.mobile-width.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+  
+.education-mobile-width {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition: opacity 0.9s cubic-bezier(0.23, 1, 0.32, 1), transform 0.9s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.education-mobile-width.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
   

@@ -132,3 +132,20 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+function showEducationOnScroll() {
+  const educationCards = document.querySelectorAll('.education-mobile-width');
+  const triggerBottom = window.innerHeight * 0.85;
+
+  educationCards.forEach(card => {
+    const cardTop = card.getBoundingClientRect().top;
+    if (cardTop < triggerBottom) {
+      card.classList.add('visible');
+    } else {
+      card.classList.remove('visible');
+    }
+  });
+};
+
+window.addEventListener('scroll', showEducationOnScroll);
+window.addEventListener('load', showEducationOnScroll);
