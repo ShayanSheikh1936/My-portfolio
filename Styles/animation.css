@@ -36,11 +36,19 @@
 }
 @keyframes typing {
   from { width: 0; }
-  to { width: 11ch; } /* Adjust ch units based on your text length */
+  to { width: 12ch; } /* Adjust ch units based on your text length */
 }
 
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+@keyframes logoScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

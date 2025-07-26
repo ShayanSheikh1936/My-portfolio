@@ -17,16 +17,15 @@ window.addEventListener('load', revealOnScroll);
 // ____________________________________________________________________________________________
 
 function showOnScroll() {
-  const project = document.querySelectorAll('.single-project1, .single-project2, .single-project3');
-  const triggerBottoms = window.innerHeight * 0.85;
+  const project = document.querySelectorAll('.mobile-width');
+  const triggerBottoms = window.innerHeight * 0.55;
 
   project.forEach(cards => {
-    
+
     const cardTops = cards.getBoundingClientRect().top;
     
     if (cardTops < triggerBottoms) {
       cards.classList.add('visible');
-
     } else {
       cards.classList.remove('visible');
     }

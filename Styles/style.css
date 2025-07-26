@@ -31,7 +31,6 @@ a {
     top: 10px;
     z-index: 7000;
     position: sticky;
-    animation: blur ease;
 }
 
 .navber-main i {
@@ -547,7 +546,7 @@ a {
 .seeMore-text
 {
     border: none;
-    transform: translateY(-15px);
+    transform: translateY(-12px);
    margin-bottom:0px ;
 }
 .hideLess1,
@@ -601,10 +600,13 @@ a {
    }
    .mobile-width
    {
+    overflow: hidden;
     width: 25rem;
    }
    .education-mobile-width
    {
+    
+    overflow: hidden;
     width: 29rem;
    }
    .single-project1
@@ -785,12 +787,23 @@ a {
     font-size:25px;
     padding-bottom: 20px;
 }
+
+.education-mobile-width:hover .education-picture  {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+.mobile-width:hover  .project-picture
+{
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+    transition: transform 0.5s ease; 
+}
 /* Skill section logo slider infinite linear animation */
 .logo-slider {
   margin: auto ;
   border-radius: 40px;
   overflow: hidden;
-  justify-content: center;
+  justify-content: center
 }
 
 .logo-track {
@@ -799,15 +812,7 @@ a {
   display: flex;
   justify-content: center;
   width: max-content;
-  animation: logoScroll 4s linear infinite;
+  animation: logoScroll 5s linear infinite;
 }
 
-@keyframes logoScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
   
