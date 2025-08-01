@@ -149,3 +149,16 @@ function showEducationOnScroll() {
 
 window.addEventListener('scroll', showEducationOnScroll);
 window.addEventListener('load', showEducationOnScroll);
+// -------------------------------------------------------------------
+
+const loading =document.getElementById("loading-spinner")
+const overallPage =document.querySelector(".overall-page")
+
+setTimeout(() => {
+  loading.style.display = "none";
+  document.body.style.height = "100px";
+  if(loading.style.display ==="none")
+  {
+    overallPage.style.display= "block"
+  }
+}, 2000);
