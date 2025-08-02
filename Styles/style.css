@@ -97,6 +97,15 @@ a {
     text-transform: uppercase;
     font-size: 13px;
 }
+.showcase-btn
+{
+    border: 2px solid rgb(138, 43, 226, 1);
+    justify-content: space-evenly;
+    border-radius: 50px;
+    padding:10px ;
+    box-shadow: 0 0 15px 10px rgb(138, 43, 226, 0.7);
+    outline: #000;
+}
 .neon-light
 {
     box-shadow: 0 0 15px 5px rgb(138, 43, 226, 0.7);

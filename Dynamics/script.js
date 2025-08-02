@@ -162,3 +162,6 @@ setTimeout(() => {
     overallPage.style.display= "block"
   }
 }, 2000);
+
+const skills = document.querySelector(".logo-slider")
+
