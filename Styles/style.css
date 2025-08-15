@@ -8,9 +8,11 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
     color: #333;
-    height: 4500px;
+    height: auto;
+    width: auto;
     scroll-behavior: smooth;
     background-color:yellowgreen;
+    overflow-x: hidden;
 }
 
 a {
@@ -536,8 +538,12 @@ a {
     border-radius: 50px 50px;
     background-color: #AD3FFB;
 }
-.btn1,
-.btn
+.hide-tap1,
+.seemore-tap1,
+.hide-tap2,
+.seemore-tap2,
+.hide-tap,
+.seemore-tap
 {
     background: none;
     font-weight: bold;
@@ -852,3 +858,52 @@ a {
   transform: translateY(0) scale(1);
 }
   
+
+.skills-container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .skill {
+    border-radius: 30px;
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    background-color: #AD3FFB;
+  }
+  
+  
+
+  .outer-circle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: conic-gradient(#f3740d 0% 90%, #ccc 0% 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-circle {
+    width: 60px;
+    height: 60px;
+    background: rgb(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .inner-circle img {
+    width: 30px;
+    height: 30px;
+  }
+  .hobbies-btn,
+  .Certificates-btn,
+  .project-btn
+  {
+    padding: 15.8px;
+  }
