@@ -893,9 +893,13 @@ a {
   }
 
   .inner-circle img {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
   }
+  .inner-circle i {
+    font-size: 45px;
+   }
   .hobbies-btn,
   .Certificates-btn,
   .project-btn
