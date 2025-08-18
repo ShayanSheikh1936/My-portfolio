@@ -18,6 +18,10 @@
 {
     width: auto;
 }
+ body
+    {
+        overflow-x: hidden;
+    }
 .author-image
 {
     display: none;

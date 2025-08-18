@@ -12,7 +12,6 @@ body {
     width: auto;
     scroll-behavior: smooth;
     background-color:yellowgreen;
-    overflow-x: hidden;
 }
 
 a {
@@ -441,10 +440,6 @@ a {
   }
  */
   
-  .project-picture
-  {
-    height: 250px;
-  }
   .live
   {
     height: 15px;
