@@ -808,9 +808,17 @@ a {
     transform: scale(1.1);
     transition: transform 0.5s ease;
 }
-.mobile-width:hover  .project-picture
+.project-picture
 {
-    transition: transform 0.5s ease;
+    background-color: purple;
+}
+.mobile-width:hover  .project-picture img
+{
+    transform: scale(1.2);
+    transition: transform 0.5s ease; 
+}
+.mobile-width  .project-picture img
+{
     transform: scale(1.1);
     transition: transform 0.5s ease; 
 }
@@ -862,14 +870,30 @@ a {
   .skill {
     border-radius: 30px;
     position: relative;
-    width: 20rem;
-    height: 20rem;
-    display: flex;
+    width: 22rem;
     justify-content: center;
-    background-color: #AD3FFB;
+    border: 2px solid #AD3FFB;
   }
-  
-  
+.skill p{
+    text-align: center;
+    font-size: 15px;
+    color: #AD3FFB;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    
+}
+.skill h3{
+    text-align: center;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    line-height: 10px;
+}
 
   .outer-circle {
     width: 70px;
@@ -905,4 +929,13 @@ a {
   .project-btn
   {
     padding: 15.8px;
+  }
+  .star img:nth-child(1):hover,
+  .star img:nth-child(2):hover,
+  .star img:nth-child(3):hover,
+  .star img:nth-child(4):hover,
+  .star img:nth-child(5):hover
+  {
+    transition: 0.2s ease-in;
+    transform: scale(1.2);
   }
