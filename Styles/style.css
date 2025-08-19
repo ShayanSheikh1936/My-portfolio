@@ -509,6 +509,7 @@ a {
 }
 .card
 {
+    
     border-radius: 30px;
 }
 .tag-container p
@@ -873,7 +874,7 @@ a {
     position: relative;
     width: 22rem;
     justify-content: center;
-    border: 2px solid #AD3FFB;
+    border: 3px solid #AD3FFB;
   }
 .skill p{
     text-align: center;
