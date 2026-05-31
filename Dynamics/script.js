@@ -177,6 +177,7 @@ function showEducationOnScroll() {
 
   educationCards.forEach(card => {
     const cardTop = card.getBoundingClientRect().top;
+    
     if (cardTop < triggerBottom) {
       card.classList.add('visible');
     } else {
@@ -230,3 +231,8 @@ showcaseBtn.forEach((tap) => {
 });
 });
 });
+
+// --------------------------------------------------------------------------
+const SkillSetOuterColor = document.querySelector(".outer-circle")
+
+SkillSetOuterColor.style.background ="conic-gradient(#e6700f 0% 90%, #ccc 0% 100%)"
