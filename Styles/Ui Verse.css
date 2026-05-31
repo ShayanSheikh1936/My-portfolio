@@ -1,0 +1,1432 @@
+.button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.button .bloom-container {
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  background: none;
+}
+
+.button .bloom-container .button-container-main {
+  width: 125px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: grid;
+  place-content: center;
+  border-right: 5px solid gey;
+  border-left: 5px solid rgba(128, 128, 128, 0.147);
+  transform: rotate(-45deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.button .bloom-container .button-container-main .button-inner {
+  height: 70px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+  transition: all 0.5s ease-in-out;
+}
+
+.button .bloom-container .button-container-main .button-inner .back {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: linear-gradient(
+    60deg,
+    rgb(247, 134, 6, 0.3) 100%,
+    rgb(245, 112, 72, 0.3) 100%
+  );
+}
+
+.button .bloom-container .button-container-main .button-inner .front {
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  background: linear-gradient(
+    60deg,
+    rgb(247, 134, 6, 0.1) 100%,
+    rgb(245, 112, 72, 0.1) 100%
+  );
+  display: grid;
+  place-content: center;
+}
+
+.button .bloom-container .button-container-main .button-inner .front .svg {
+  fill: rgb(247, 135, 0);
+  opacity: 1;
+  width: 50px;
+  aspect-ratio: 1;
+  transform: rotate(45deg);
+  transition: all 0.2s ease-in;
+}
+
+.button .bloom-container .button-container-main .button-glass {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.8) 100%
+  );
+  transform: translate(0%, -50%) rotate(0deg);
+  transform-origin: bottom center;
+  transition: all 0.5s ease-in-out;
+}
+
+.button .bloom-container .bloom {
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  background: white;
+}
+
+.button .bloom-container .bloom1 {
+  top: 10px;
+  right: 20px;
+  box-shadow:
+    rgb(255, 255, 255) 0px 0px 10px 10px,
+    rgb(255, 255, 255) 0px 0px 20px 20px;
+}
+
+.button .bloom-container .bloom2 {
+  bottom: 10px;
+  left: 20px;
+  box-shadow:
+    rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+    rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+}
+
+.button .bloom-container:hover {
+  transform: scale(1.1);
+}
+
+.button .bloom-container:hover .button-container-main .button-glass {
+  transform: translate(0%, -40%);
+}
+
+.button
+  .bloom-container:hover
+  .button-container-main
+  .button-inner
+  .front
+  .svg {
+  opacity: 1;
+  filter: drop-shadow(0 0 9px orange);
+}
+
+.button .bloom-container:active {
+  transform: scale(0.7);
+}
+
+.button .bloom-container:active .button-container-main .button-inner {
+  transform: scale(1.2);
+}
+
+  /* ------------------------------------------------------------------- */
+
+  .button1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button1 .bloom-container1 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 {
+    width: 125px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid gey;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:  rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 .back1 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(147, 5, 230, 0.3) 100%,
+      rgba(141, 55, 240, 0.3) 100%
+    );
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 .front1 {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(147, 5, 230, 0.3) 100%,
+      rgba(141, 55, 240, 0.3) 100%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 .front1 .svg1 {
+    fill: purple;
+    opacity: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-glass1 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button1 .bloom-container1 .bloom1 {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button1 .bloom-container1 .bloom11 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 10px 10px,
+      rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button1 .bloom-container1 .bloom21 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button1 .bloom-container1:hover {
+    transform: scale(1.1);
+  }
+  
+  .button1 .bloom-container1:hover .button-container-main1 .button-glass1 {
+    transform: translate(0%, -40%);
+  }
+  
+  .button1
+    .bloom-container1:hover
+    .button-container-main1
+    .button-inner1
+    .front1
+    .svg1 {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px purple);
+  }
+  
+  .button1 .bloom-container1:active {
+    transform: scale(0.7);
+  }
+  
+  .button1 .bloom-container1:active .button-container-main1 .button-inner1 {
+    transform: scale(1.2);
+  }
+  /* ------------------------------------------------------------------------ */
+
+  .button2 {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button2 .bloom-container2 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button2 .bloom-container2 .button-container-main2 {
+    width: 125px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid gey;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button2 .bloom-container2 .button-container-main2 .button-inner2 {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:  rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button2 .bloom-container2 .button-container-main2 .button-inner2 .back2 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(234, 238, 7, 0.3) 100%,
+      rgba(219, 217, 66, 0.3) 100%
+    );
+  }
+  
+  .button2 .bloom-container2 .button-container-main2 .button-inner2 .front2 {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(234, 238, 7, 0.3) 100%,
+      rgba(219, 217, 66, 0.3) 100%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .button2 .bloom-container2 .button-container-main2 .button-inner2 .front2 .svg2 {
+    fill: yellow;
+    opacity: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button2 .bloom-container2 .button-container-main2 .button-glass2 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(223, 238, 87, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button2 .bloom-container2 .bloom2 {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button2 .bloom-container2 .bloom12 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 10px 10px,
+      rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button2 .bloom-container2 .bloom22 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button2 .bloom-container2:hover {
+    transform: scale(1.1);
+  }
+  
+  .button2 .bloom-container2:hover .button-container-main2 .button-glass2 {
+    transform: translate(0%, -40%);
+  }
+  
+  .button2
+    .bloom-container2:hover
+    .button-container-main2
+    .button-inner2
+    .front2
+    .svg2 {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px yellow);
+  }
+  
+  .button2 .bloom-container2:active {
+    transform: scale(0.7);
+  }
+  
+  .button2 .bloom-container2:active .button-container-main2 .button-inner2 {
+    transform: scale(1.2);
+  }
+  /* ------------------------------------------------------------------------------------- */
+  .button3 {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button3 .bloom-container3 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button3 .bloom-container3 .button-container-main3 {
+    width: 125px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid gey;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button3 .bloom-container3 .button-container-main3 .button-inner3 {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:  rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button3 .bloom-container3 .button-container-main3 .button-inner3 .back3 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(7, 99, 238, 0.3) 100%,
+      rgba(0, 51, 128, 0.3) 100%
+    );
+  }
+  
+  .button3 .bloom-container3 .button-container-main3 .button-inner3 .front3 {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(7, 99, 238, 0.3) 100%,
+      rgba(0, 51, 128, 0.3) 100%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .button3 .bloom-container3 .button-container-main3 .button-inner3 .front3 .svg3 {
+    fill: blue;
+    opacity: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button3 .bloom-container3 .button-container-main3 .button-glass3 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(223, 238, 87, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button3 .bloom-container3 .bloom3 {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button3 .bloom-container3 .bloom13 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 10px 10px,
+      rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button3 .bloom-container3 .bloom23 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button2 .bloom-container2:hover {
+    transform: scale(1.1);
+  }
+  
+  .button3 .bloom-container3:hover .button-container-main3 .button-glass3 {
+    transform: translate(0%, -40%);
+  }
+  
+  .button3
+    .bloom-container3:hover
+    .button-container-main3
+    .button-inner3
+    .front3
+    .svg3 {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px blue);
+  }
+  
+  .button2 .bloom-container3:active {
+    transform: scale(0.7);
+  }
+  
+  .button3 .bloom-container3:active .button-container-main3 .button-inner3 {
+    transform: scale(1.2);
+  }
+
+   /* ------------------------------------------------------------------------------------- */
+   .button4 {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button4 .bloom-container4 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button4 .bloom-container4 .button-container-main4 {
+    width: 125px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid gey;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button4 .bloom-container4 .button-container-main4 .button-inner4 {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:  rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button4 .bloom-container4 .button-container-main4 .button-inner4 .back4 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(7, 99, 238, 0.3) 100%,
+      rgba(0, 51, 128, 0.3) 100%
+    );
+  }
+  
+  .button4 .bloom-container4 .button-container-main4 .button-inner4 .front4 {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(7, 99, 238, 0.3) 100%,
+      rgba(0, 51, 128, 0.3) 100%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .button4 .bloom-container4 .button-container-main4 .button-inner4 .front4 .svg4 {
+    fill: blue;
+    opacity: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button4 .bloom-container4 .button-container-main4 .button-glass4 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(223, 238, 87, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button4 .bloom-container4 .bloom4 {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button4 .bloom-container4 .bloom14 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 10px 10px,
+      rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button4 .bloom-container4 .bloom24 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button4 .bloom-container4:hover {
+    transform: scale(1.1);
+  }
+  
+  .button4 .bloom-container4:hover .button-container-main4 .button-glass4 {
+    transform: translate(0%, -40%);
+  }
+  
+  .button4
+    .bloom-container4:hover
+    .button-container-main4
+    .button-inner4
+    .front4
+    .svg4 {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px blue);
+  }
+  
+  .button4 .bloom-container4:active {
+    transform: scale(0.7);
+  }
+  
+  .button4 .bloom-container4:active .button-container-main4 .button-inner4 {
+    transform: scale(1.2);
+  }
+
+   /* ------------------------------------------------------------------------------------- */
+   .button5 {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button5 .bloom-container5 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button5 .bloom-container5 .button-container-main5 {
+    width: 125px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid gey;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button5 .bloom-container5 .button-container-main5 .button-inner5 {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:  rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button5 .bloom-container5 .button-container-main5 .button-inner5 .back5 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(7, 99, 238, 0.3) 100%,
+      rgba(0, 51, 128, 0.3) 100%
+    );
+  }
+  
+  .button5 .bloom-container5 .button-container-main5 .button-inner5 .front5 {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(7, 99, 238, 0.3) 100%,
+      rgba(0, 51, 128, 0.3) 100%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .button5 .bloom-container5 .button-container-main5 .button-inner5 .front5 .svg5 {
+    fill: blue;
+    opacity: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button5 .bloom-container5 .button-container-main5 .button-glass5 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(223, 238, 87, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button5 .bloom-container5 .bloom5 {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button5 .bloom-container5 .bloom15 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 10px 10px,
+      rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button5 .bloom-container5 .bloom25 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button5 .bloom-container5:hover {
+    transform: scale(1.1);
+  }
+  
+  .button5 .bloom-container5:hover .button-container-main5 .button-glass5 {
+    transform: translate(0%, -40%);
+  }
+  
+  .button5
+    .bloom-container5:hover
+    .button-container-main5
+    .button-inner5
+    .front5
+    .svg5 {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px blue);
+  }
+  
+  .button5 .bloom-container5:active {
+    transform: scale(0.7);
+  }
+  
+  .button5 .bloom-container5:active .button-container-main5 .button-inner5 {
+    transform: scale(1.2);
+  }
+
+  /* ------------------------------------------------------------------------------------- */
+  .button6 {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button6 .bloom-container6 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button6 .bloom-container6 .button-container-main6 {
+    width: 125px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid gey;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button6 .bloom-container6 .button-container-main6 .button-inner6 {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:  rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button6 .bloom-container6 .button-container-main6 .button-inner6 .back6 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(131, 1, 1, 0.3) 100%,
+      rgba(129, 16, 16, 0.3) 100%
+    );
+  }
+  
+  .button6 .bloom-container6 .button-container-main6 .button-inner6 .front6 {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(131, 1, 1, 0.3) 100%,
+      rgba(129, 16, 16, 0.3) 100%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .button6 .bloom-container6 .button-container-main6 .button-inner6 .front6 .svg6 {
+    fill: blue;
+    opacity: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button6 .bloom-container6 .button-container-main6 .button-glass6 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(223, 238, 87, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button6 .bloom-container6 .bloom6 {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button6 .bloom-container6 .bloom16 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 10px 10px,
+      rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button6 .bloom-container6 .bloom26 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button6 .bloom-container6:hover {
+    transform: scale(1.1);
+  }
+  
+  .button6 .bloom-container6:hover .button-container-main6 .button-glass6 {
+    transform: translate(0%, -40%);
+  }
+  
+  .button6
+    .bloom-container6:hover
+    .button-container-main6
+    .button-inner6
+    .front6
+    .svg6 {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px brown);
+  }
+  
+  .button6 .bloom-container6:active {
+    transform: scale(0.7);
+  }
+  
+  .button6 .bloom-container6:active .button-container-main6 .button-inner6 {
+    transform: scale(1.2);
+  }
+
+   /* ------------------------------------------------------------------- */
+
+   .button1 {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button1 .bloom-container1 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 {
+    width: 125px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid gey;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:  rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 .back1 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(147, 5, 230, 0.3) 100%,
+      rgba(141, 55, 240, 0.3) 100%
+    );
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 .front1 {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(147, 5, 230, 0.3) 100%,
+      rgba(141, 55, 240, 0.3) 100%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-inner1 .front1 .svg1 {
+    fill: purple;
+    opacity: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button1 .bloom-container1 .button-container-main1 .button-glass1 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button1 .bloom-container1 .bloom1 {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button1 .bloom-container1 .bloom11 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 10px 10px,
+      rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button1 .bloom-container1 .bloom21 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button1 .bloom-container1:hover {
+    transform: scale(1.1);
+  }
+  
+  .button1 .bloom-container1:hover .button-container-main1 .button-glass1 {
+    transform: translate(0%, -40%);
+  }
+  
+  .button1
+    .bloom-container1:hover
+    .button-container-main1
+    .button-inner1
+    .front1
+    .svg1 {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px purple);
+  }
+  
+  .button1 .bloom-container1:active {
+    transform: scale(0.7);
+  }
+  
+  .button1 .bloom-container1:active .button-container-main1 .button-inner1 {
+    transform: scale(1.2);
+  }
+  /* ------------------------------------------------------------------------ */
+
+  .button7 {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button7 .bloom-container7 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button7 .bloom-container7 .button-container-main7 {
+    width: 125px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid gey;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button7 .bloom-container7 .button-container-main7 .button-inner7 {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:  rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button7 .bloom-container7 .button-container-main7 .button-inner7 .back7 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(160, 40, 230, 0.3) 100%,
+      rgba(146, 78, 223, 0.3) 100%
+    );
+  }
+  
+  .button7 .bloom-container7 .button-container-main7 .button-inner7 .front7 {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(160, 40, 230, 0.3) 100%,
+      rgba(146, 78, 223, 0.3) 100%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .button7 .bloom-container7 .button-container-main7 .button-inner7 .front7 .svg7 {
+    fill: yellow;
+    opacity: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button7 .bloom-container7 .button-container-main7 .button-glass7 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(223, 238, 87, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button7 .bloom-container7 .bloom7 {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button7 .bloom-container7 .bloom17 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 10px 10px,
+      rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button7 .bloom-container7 .bloom27 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button7 .bloom-container7:hover {
+    transform: scale(1.1);
+  }
+  
+  .button7 .bloom-container7:hover .button-container-main7 .button-glass7 {
+    transform: translate(0%, -40%);
+  }
+  
+  .button7
+    .bloom-container7:hover
+    .button-container-main7
+    .button-inner7
+    .front7
+    .svg7 {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px purple);
+  }
+  
+  .button7 .bloom-container7:active {
+    transform: scale(0.7);
+  }
+  .front7 img
+  {
+    border-radius: 50px;
+  }
+  
+  .button7 .bloom-container7:active .button-container-main7 .button-inner7 {
+    transform: scale(1.2);
+  }
+
+   /* ------------------------------------------------------------------------ */
+
+   .button8 {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .button8 .bloom-container8 {
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    border: none;
+    background: none;
+  }
+  
+  .button8 .bloom-container8 .button-container-main8 {
+    width: 125px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    display: grid;
+    place-content: center;
+    border-right: 5px solid gey;
+    border-left: 5px solid rgba(128, 128, 128, 0.147);
+    transform: rotate(-45deg);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button8 .bloom-container8 .button-container-main8 .button-inner8 {
+    height: 70px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    box-shadow:  rgba(100, 100, 111, 0.5) -10px 5px 10px 0px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button8 .bloom-container8 .button-container-main8 .button-inner8 .back8 {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(7, 99, 238, 0.3) 100%,
+      rgba(0, 51, 128, 0.3) 100%
+    );
+  }
+  
+  .button8 .bloom-container8 .button-container-main8 .button-inner8 .front8 {
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background: linear-gradient(
+      60deg,
+      rgba(7, 99, 238, 0.3) 100%,
+      rgba(0, 51, 128, 0.3) 100%
+    );
+    display: grid;
+    place-content: center;
+  }
+  
+  .button8 .bloom-container8 .button-container-main8 .button-inner8 .front8 .svg8 {
+    fill: blue;
+    opacity: 1;
+    width: 50px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    transition: all 0.2s ease-in;
+  }
+  
+  .button8 .bloom-container8 .button-container-main8 .button-glass8 {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(223, 238, 87, 0) 0%,
+      rgba(255, 255, 255, 0.8) 100%
+    );
+    transform: translate(0%, -50%) rotate(0deg);
+    transform-origin: bottom center;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .button8 .bloom-container8 .bloom8 {
+    height: 1px;
+    width: 1px;
+    position: absolute;
+    background: white;
+  }
+  
+  .button8 .bloom-container8 .bloom18 {
+    top: 10px;
+    right: 20px;
+    box-shadow:
+      rgb(255, 255, 255) 0px 0px 10px 10px,
+      rgb(255, 255, 255) 0px 0px 20px 20px;
+  }
+  
+  .button8 .bloom-container8 .bloom28 {
+    bottom: 10px;
+    left: 20px;
+    box-shadow:
+      rgba(255, 255, 255, 0.5) 0px 0px 10px 10px,
+      rgba(255, 255, 255, 0.5) 0px 0px 30px 20px;
+  }
+  
+  .button8 .bloom-container8:hover {
+    transform: scale(1.1);
+  }
+  
+  .button8 .bloom-container8:hover .button-container-main8 .button-glass8 {
+    transform: translate(0%, -40%);
+  }
+  
+  .button8
+    .bloom-container8:hover
+    .button-container-main8
+    .button-inner8
+    .front8
+    .svg8 {
+    opacity: 1;
+    filter: drop-shadow(0 0 9px blue);
+  }
+  
+  .button8 .bloom-container8:active {
+    transform: scale(0.7);
+  }
+  .front8 img
+  {
+    border-radius: 50px;
+  }
+  
+  .button8 .bloom-container8:active .button-container-main8 .button-inner8 {
+    transform: scale(1.2);
+  }
+
+  /* --------------------------------------------------------------------- */
+  /* From Uiverse.io by Juanes200122 */ 
+/* From Uiverse.io by Juanes200122 */ 
+.progress {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: #ececec;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+.progress .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+.skill-box .title1 {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.skill-box .skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(0,0,0,0.1);
+}
+
+.skill-bar .skill-per {
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 90%;
+  border-radius: 6px;
+  background: #4070f4;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+.skill-per.html {
+   /*progreso de las diferentes lenguajes*/
+  width: 20%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.css {
+         /*progreso de las diferentes lenguajes*/
+  width: 70%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.javascript {
+      /*progreso de las diferentes lenguajes*/
+  width: 50%;
+  animation-delay: 0.2s;
+}
+
+.skill-per.nodejs {
+      /*progreso de las diferentes lenguajes*/
+  width: 30%;
+  animation-delay: 0.3s;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.skill-per .tooltip {
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: #4070f4;
+  z-index: 1;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: #4070f4;
+  transform: translateX(-50%) rotate(45deg);
+}
